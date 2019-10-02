@@ -1,0 +1,43 @@
+import java.util.Scanner;
+class Strong
+{
+static int fact(int x)
+{
+int f=1;
+while(x>1)
+{
+f=f*x;
+x--;
+}
+return f;
+}
+
+
+ static boolean isstrong(int n)
+{
+int sum=0,t=n;//t is used to store the n value
+while(n!=0)
+{
+int r=n%10;
+sum=sum+fact(r);
+n=n/10;
+}
+if(t==sum)
+return true;
+else
+return false;
+}
+
+public static void main(String[] args)
+{
+Scanner s=new Scanner(System.in);
+System.out.println("enter the no");
+int n=s.nextInt();
+boolean res=isstrong(n);
+if(res==true)
+System.out.println(n+"--is strong no");
+else
+System.out.println(n+"--is not astrong no");
+}
+}
+

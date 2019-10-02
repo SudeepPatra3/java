@@ -1,0 +1,48 @@
+import java.util.Scanner;
+class Deserium
+{
+static int countd(int x)//1st count how many digits
+{
+	int count=0;
+	do{
+		count++;
+		x=x/10;
+	}while(x!=0);
+	return count;
+}
+static int pow(int r,int dc)//return power
+{
+	int pw=1;
+	while(dc>0)
+	{
+		pw=pw*r;
+		dc--;
+	}
+	return pw;
+}
+static boolean des(int n)
+{
+	int dc=countd(n);
+	int sum=0,t=n;
+	while(n!=0)
+	{
+		int r=n%10;
+		sum=sum+pow(r,dc);
+		n=n/10;
+		dc--;
+	}
+	return sum==t;
+}
+public static void main(String[] args)
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter the number");
+		int n1=s.nextInt();
+		boolean res=des(n1);
+		if(res==true)
+			System.out.println(n1+"--is deserium");
+		else
+			System.out.println(n1+"--is not deserium");
+	}
+}
+			

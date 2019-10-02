@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class Middle
+{
+	public static void main (String[] args)
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("enter the 3 integer no");
+		int i = s.nextInt();
+		
+		//System.out.println("enter the 2nd no");
+		int j = s.nextInt();
+		
+		//System.out.println("enter the 3rd no");
+		int k = s.nextInt();
+		if (i>j&&i<k || i>k&&i<j)
+		System.out.println(i+"is middle");
+		else if (j>i&&j<k || j>k&&j<i)
+		System.out.println(j+"is middle");
+		else
+		System.out.println(k+"is middle");
+	}
+}

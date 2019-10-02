@@ -1,0 +1,28 @@
+// n to the power p
+import java.util.Scanner;
+class Pn
+{
+	static int pow(int n,int p)
+	{
+		int i=1;
+		while(p>0)
+		{
+		i=i*n;
+		p--;	
+		}
+		return i;
+	}
+	public static void main(String[] args)
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter n");
+		int n1=s.nextInt();
+		System.out.println("enter p");
+		int p1=s.nextInt();
+		int pw1=pow(n1,p1);
+		System.out.println(pw1);
+	}
+}
+
+		
+		

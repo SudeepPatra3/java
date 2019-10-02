@@ -1,0 +1,13 @@
+public class Array3 {
+public static void main(String[] args) {
+	int ar[]; //declaration
+	ar=new int[5]; //allocation
+	ar[1]=54;
+	ar[3]=67;//initialization
+	ar[4]=87;
+	for (int i=0;i<ar.length;i++)
+	{
+		System.out.println(i+"--"+ar[i]);
+	}
+}
+}

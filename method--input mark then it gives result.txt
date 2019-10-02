@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class Mark
+{
+static String marks(double a,double b,double c,double d)
+{
+	double per=((a+b+c+d)/400)*100;
+	if(a<35||b<35||c<35||d<35)
+		return "fail";
+	else if (per>=85)
+		return "distinction";
+	else if (per>=60)
+		return "1st division";
+	else if (per>=50)
+		return "2nd division";
+	else
+		return "pass";
+}	
+	public static void main(String[] args)
+{
+Scanner s=new Scanner(System.in);
+System.out.println("enter the subjects marks");
+double e=s.nextDouble();
+double f=s.nextDouble();
+double g=s.nextDouble();
+double h=s.nextDouble();
+String f1=marks(e,f,g,h);
+System.out.println(f1);
+}
+}
+

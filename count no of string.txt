@@ -1,0 +1,33 @@
+//count no of string
+import java.util.Scanner;
+public class Howmany {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String st=sc.nextLine();
+		String str=sc.nextLine();
+		int count= countSubStr(st,str);
+		System.out.println(count+" times it is there");
+
+
+	}
+	static int countSubStr(String st, String str)
+	{	
+		int count=0;
+		char c1[]=st.toCharArray();
+		char c2[]=str.toCharArray();
+		for (int i = 0; i < c1.length; i++) {
+			int j=0;int k=i;
+			while(j<c2.length && k<c1.length && c1[k]==c2[j])
+			{
+				j++;
+				k++;
+			}
+			if(j==c2.length)
+			{
+				count++;
+				i=k-1;
+			}
+		}
+		return count++;
+	}
+}

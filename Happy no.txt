@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class Happy
+{
+	static boolean ishappy(int n)
+	{
+		while(n>9)
+		{
+			int sum=0,t=n;
+			while(n!=0)
+			{
+				int r=n%10;
+				sum=sum+(r*r);
+				n=n/10;
+			}
+			sum=t;
+		}
+		return n==1||n==7;
+	}
+	
+	public static void main(String[] args)
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter a no");
+		int n1=s.nextInt();
+		boolean res=ishappy(n1);
+		if(res=true){
+		System.out.println(n1+" is happy no");}
+		else{
+		System.out.println(n1+" is not happy no");	}
+	}
+}

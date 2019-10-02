@@ -1,0 +1,24 @@
+//occurance prg
+public class Occurance {
+public static void main(String[] args) {
+	int ar[]= {34,56,67,56,56,23,45,67,89};
+	int n=ar.length;
+	for(int i=0;i<n;i++)
+	{
+		int count=1;
+		for(int j=1+i;j<n;j++)
+		{
+			if(ar[i]==ar[j])
+			{
+				ar[j]=ar[n-1];
+				count++;
+				n--;
+				j--;
+			}
+		}
+		System.out.println(ar[i]+"-->"+count);
+	}
+}
+}
+
+

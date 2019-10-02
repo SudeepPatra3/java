@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class Evenodd
+{
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the 1st range ");
+		int e=s.nextInt();
+		System.out.println("Enter the 2nd range ");
+		int o=s.nextInt();
+		int sumr=0,sump=0;
+		while(e<=o)
+		{
+			if(e%2==0)
+			{
+				sumr=sumr+e;
+			}
+			else{
+				sump=sump+e;
+			}
+			e++;
+		}
+		System.out.println("sum of even no is--"+sumr);
+		System.out.println("sum of odd no is--"+sump);
+	}
+}
+

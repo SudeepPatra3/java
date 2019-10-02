@@ -1,0 +1,40 @@
+//define a method to return factorial of n
+import java.util.Scanner;
+class Factorial1
+{
+static int fact(int n)
+{
+int f=1;
+while(n>1)
+		{
+			f=f*n;
+			n--;
+		}
+
+return f;
+}
+
+
+public static void main(String[] args)
+{
+Scanner s=new Scanner(System.in);
+
+int x=9,y=6;
+int f1=fact(x);
+System.out.println("factorial of "+x+"is"+f1);
+
+System.out.println("factorial of "+y+"is"+fact(y));
+System.out.println("factorial of "+6+"is"+fact(6));
+
+int f2=fact(8);
+System.out.println("factorial of "+8+"is"+f2);
+
+System.out.println("Enter the no ");
+int v=s.nextInt();
+System.out.println("factorial of "+v+"is"+fact(v));
+}
+}
+
+
+
+

@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class Prime1
+{
+static boolean prime(int z)
+{
+int i=1,count=1;
+while(i<=z/2)
+		{
+			if(z%i==0)
+			count++;
+			i++;
+		}
+	if(count==2)
+		return true;
+	else
+		return false;
+}
+public static void main(String[] args)
+{
+Scanner s=new Scanner(System.in);
+System.out.println("enter the no");
+int n=s.nextInt();
+boolean res=prime(n);
+if(res==true)
+{
+System.out.println(""+n+"--is prime no");
+}
+else{
+System.out.println(""+n+"--is not a prime no");
+}
+}
+}

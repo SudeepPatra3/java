@@ -1,0 +1,24 @@
+
+public class Array2d {
+public static void main(String[] args) {
+	int mat[][];//declaration
+	mat=new int[][]{{7,8,9},{2,3,5},{6,4,1}};//intialization
+	System.out.println(mat);//adress
+	System.out.println(mat[1]);//adress
+	System.out.println("numer of rows:"+mat.length);//3
+	System.out.println("number of element in first row--"+mat[0].length);
+	System.out.println("number of element in 2nd row--"+mat[1].length);
+	System.out.println("number of element in last row--"+mat[mat.length-1].length);
+	
+	for (int i = 0; i < mat.length; i++) //no of rows
+	{
+		for (int j = 0; j < mat[i].length; j++)//no of elements in each row 
+		{
+			System.out.print(mat[i][j]+" ");
+		}
+		
+		System.out.println();
+	}
+	
+}
+}

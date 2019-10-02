@@ -1,0 +1,22 @@
+//guess no between 0 to 9 
+import java.util.Scanner;
+import java.util.Random;
+
+class Guess
+{
+	public static void main (String[] args)
+	{
+		Scanner s = new Scanner(System.in);
+		Random r= new Random();
+		
+		System.out.println("enter ramndom no between 0 to 9 ");
+		int i=s.nextInt();
+		int rn=r.nextInt(10);
+		if(i==rn)
+			System.out.println("you won the game");
+		else
+			System.out.println("you loose the game no was"+rn);
+	}
+}
+
+		

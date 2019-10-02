@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class Armstrong
+{
+static boolean arm(int z)
+{
+int sum=0;
+int t=z;
+while(z!=0)
+{
+int r=z%10;
+sum=sum+(r*r*r);
+z=z/10;
+}
+
+if(sum==t)
+	return true;
+else
+	return false;
+
+}
+public static void main(String[] args)
+{
+Scanner s=new Scanner(System.in);
+int k=s.nextInt();
+boolean res=arm(k);
+if(res==true)
+	System.out.println(+k+"is armstrong");
+else
+	System.out.println(+k+"is not a armstrong");
+
+}
+}

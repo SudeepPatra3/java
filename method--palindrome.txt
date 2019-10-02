@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class Palindrome1
+{
+static boolean palin(int z)
+{
+int rev=0,t=z;
+		while(z!=0)
+		{
+			int r=z%10;
+			rev=rev*10+r;
+			z=z/10;
+		}
+		if(t==rev)
+			return true;
+		else
+			return false;
+
+}
+public static void main(String[] args)
+{
+
+Scanner s=new Scanner(System.in);
+int k=s.nextInt();
+boolean res=palin(k);
+if(res==true)
+	System.out.println(+k+"is palindrome");
+else
+	System.out.println(+k+"is not a palindrome");
+}
+}

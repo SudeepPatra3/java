@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class Perfectmethod
+{
+static boolean per(int z)
+{
+int i=1,sum=0;
+while(i<=z/2)
+{
+if(z%i==0)
+	{
+	sum=sum+i;
+	}
+	i++;
+}
+if(sum==z)
+	return true;
+else
+	return false;
+}
+public static void main(String[] args)
+{
+Scanner s=new Scanner(System.in);
+System.out.println("enter the no");
+int n=s.nextInt();
+System.out.println(" "+per(n));
+
+}
+}

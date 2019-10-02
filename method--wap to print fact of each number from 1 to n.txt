@@ -1,0 +1,25 @@
+//wap to print fact of each number from 1 to n
+import java.util.Scanner;
+class Each
+{
+static int fact(int x)
+{
+int f=1;
+while(x>1)
+{
+f=f*x;
+x--;
+}
+return f;
+}
+public static void main(String[] args)
+{
+Scanner s=new Scanner(System.in);
+System.out.println("enter the no");
+int n=s.nextInt();
+for(int i=1;i<=n;i++)
+{
+System.out.println(i+"!="+fact(i));
+}
+}
+}

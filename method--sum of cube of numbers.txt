@@ -1,0 +1,29 @@
+//sum of cube of numbers by using  method
+
+class Cube
+{
+static int cube1(int n)
+{
+int sum=0;
+while(n!=0)
+{
+int r=n%10;
+sum=sum+(r*r*r);
+n=n/10;
+}
+return sum;
+}
+
+public static void main(String[] args)
+{
+int x=234,y=671;
+int s1=cube1(x);
+System.out.println("sum of cube of digits("+x+")is---"+s1);
+
+System.out.println("sum of cube of digits("+y+")is---"+cube1(y));
+System.out.println("sum of cube of digits("+671+")is---"+cube1(671));
+}
+}
+
+
+

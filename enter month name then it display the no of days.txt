@@ -1,0 +1,41 @@
+import java.util.Scanner;
+class Monthno1
+{
+	public static void main (String[] args)
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("enter the month name");
+		String i=s.next();
+		
+		if (i.equals("jan")){
+		System.out.println("31 days");}
+		
+		else if (i.equals("feb")){
+		System.out.println("28 days");}
+		else if (i.equals("mar")){
+		System.out.println("31 days");}
+		else if (i.equals("april")){
+		System.out.println("30 days");}
+		else if (i.equals("may")){
+		System.out.println("31 days");}
+		else if (i.equals("june")){
+		System.out.println("30 days");}
+		else if (i.equals("july")){
+		System.out.println("31 days");}
+		else if (i.equals("aug")){
+		System.out.println("31 days");}
+		else if (i.equals("sept")){
+		System.out.println("30 days");}
+		else if (i.equals("oct")){
+		System.out.println("31 days");}
+		else if (i.equals("nov")){
+		System.out.println("30 days");}
+		else if (i.equals("dec")){
+		System.out.println("31 days");}
+		else {
+		System.out.println("invalid month name");
+		}
+		
+	}
+}
+

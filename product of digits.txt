@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class Product
+{
+	public static void main(String[] args)
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter the no");
+		int no=s.nextInt();
+		int mult=1;
+		
+		while(no!=0)
+		{
+		int r=no%10;
+		mult=mult*r;
+		no=no/10;
+		
+		}
+		System.out.println("multiple of numbers is"+mult);
+	}
+}
+
+	

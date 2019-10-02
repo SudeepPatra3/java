@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class Biggest4
+{
+	public static void main (String[] args)
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("enter the integer no");
+		int i = s.nextInt();
+		
+		//System.out.println("enter the 2nd no");
+		int j = s.nextInt();
+		
+		//System.out.println("enter the 3rd no");
+		int k = s.nextInt();
+		int l = s.nextInt();
+		
+		if (i>j&&i>k&&i>l)
+		System.out.println(i+"is biggest");
+		else if (j>k&&j>l)
+		System.out.println(j+"is biggest");
+		else if(k>l)
+		System.out.println(k+"is biggest");
+		else
+		System.out.println(l+"is biggest");
+	}
+}
+

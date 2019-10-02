@@ -1,0 +1,75 @@
+//Dice game
+import java.util.Scanner;
+import java.util.Random;
+class Dice
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		Random rd = new Random();
+		System.out.println("welcome to dice game");
+		System.out.println("enter the first plyr name");
+		String fname=sc.next();
+		System.out.println("enter the second plyr name");
+		String sname=sc.next();
+		
+		int ftotal=0;
+		int stotal=0;
+		
+		while(true){
+			while(true)
+			{
+				System.out.println(fname+"press f to flip the dice");
+					char c1=sc.next().charAt(0);
+				if (c1=='F'|| c1=='f')
+				{
+					int score = rd.nextInt(6)+1;
+					System.out.println(fname+"you scored "+score);
+					if (ftotal+score<=100)
+						ftotal=ftotal+score;
+					if (ftotal==100)
+					{
+						System.out.println(fname+"won the game");
+						return;
+					}
+					else
+					{
+						System.out.println(fname+"total score is  "+ftotal);
+					}
+					break;
+				}
+				else{
+					System.out.println("you not pressed f/F");
+					
+					
+				}
+			}
+			while(true)
+			{
+				System.out.println(fname+"press s to flip the dice");
+					char c1=sc.next().charAt(0);
+				if (c1=='S'|| c1=='s')
+				{
+					int score = rd.nextInt(6)+1;
+					System.out.println(sname+"you scored "+score);
+					if (stotal+score<=100)
+						stotal=stotal+score;
+					if (stotal==100)
+					{
+						System.out.println(sname+"won the game");
+						return;
+					}
+					else
+					{
+						System.out.println(sname+"total score is  "+stotal);
+					}
+					break;
+				}
+				else
+				{
+					System.out.println("you not pressed s/S");
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+import java.util.Scanner;
+class Result
+{
+	public static void main (String[] args)
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("enter the mark of 4 subject");
+		int i = s.nextInt();
+		int j = s.nextInt();
+		int k = s.nextInt();
+		int l = s.nextInt();
+		double p;
+		
+		
+		if (i<35||j<35||k<35||l<35)
+		{
+			System.out.println("Fail");
+		}
+		else
+		{
+			
+		p=(i+j+k+l)/4;
+		System.out.println("percentage is "+p);
+		
+		if (p>=85.00)
+			System.out.println(" Distinction");
+		 else if (p>=60.00)
+		    System.out.println(" 1st division");
+		 else if(p>=50.00)
+		    System.out.println(" 2nd division");
+		else
+			System.out.println("pass");
+		}
+			
+			
+	}
+}
+
+		

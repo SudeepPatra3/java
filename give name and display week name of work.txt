@@ -1,0 +1,35 @@
+import java.util.Scanner;
+class Week
+{
+	public static void main (String[] args)
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("enter the name");
+		String i=s.next();
+		switch(i)
+		{
+			case "sudeep":System.out.println("monday");
+			        break;
+			case "ashis":System.out.println("friday");
+			        break;
+			case "ankit":System.out.println("wednesday");
+			        break;		
+			case "amit":System.out.println("thursday");
+			        break;		
+			case "ran":System.out.println("sunday");
+			        break;
+			case "kha":System.out.println("saturday");
+			        break;			
+			case "sesa":System.out.println("wednesday");
+			        break;
+			case "simu":System.out.println("sunday");
+			        break;
+			case "bala":System.out.println("monday");
+			        break;
+			case "jatin":System.out.println("wednesday");
+			        break;			
+			
+				default: System.out.println("invalid name");
+		}
+	}
+}

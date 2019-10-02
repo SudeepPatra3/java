@@ -1,0 +1,20 @@
+//calculate sum of square of digit
+import java.util.Scanner;
+class Squaresum
+{
+	public static void main(String[] args)
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter the no");
+		int no=s.nextInt();
+		int sum=0;
+		while(no!=0)
+		{
+			int r=no%10;
+			r=r*r;
+			sum=sum+r;
+			no=no/10;
+		}
+		System.out.println("result is--"+sum);
+	}
+}

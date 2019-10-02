@@ -1,0 +1,28 @@
+//wap to read n integer values from user and print how many negetive and posetive present in that
+
+import java.util.Scanner;
+public class Posetive {
+public static void main(String[] args) {
+	Scanner s=new Scanner(System.in);
+	System.out.println("enter size of array");
+	int n=s.nextInt();
+	int ar[]=new int[n];
+	System.out.println("enter "+n+" elements");
+	for(int i=0;i<ar.length;i++)
+	{
+		ar[i]=s.nextInt();
+		
+	}
+	int pc=0,nc=0;
+	for(int i=0;i<ar.length;i++)
+	{
+	
+	if(ar[i]<0)
+		nc++;
+	else
+		pc++;
+	}
+	System.out.println("total posetive nos are-"+pc);
+	System.out.println("total negetive nos are-"+nc);
+}
+}

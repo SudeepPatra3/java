@@ -1,0 +1,49 @@
+/*wap to count no of vowels and consonants,capital letters,smal letters,digits and special charecters present in the user entered string
+input--Sudeepkumar.patra3@gmail.com*/
+import java.util.Scanner;
+public class Allarr {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter the string");
+	String st=sc.nextLine();
+	int vc=0,cc=0,uc=0,lc=0,dc=0,spc=0;
+	for(int i=0;i<st.length();i++)
+	{
+		char ch=st.charAt(i);
+		if(ch>=65&&ch<=90)
+		{
+			uc++;
+			if(ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+				vc++;
+			else 
+				cc++;
+		}
+			else if(ch>=97 && ch<=122)
+			{
+				lc++;
+				if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+					vc++;
+				else 
+					cc++;
+				
+			}
+			else if(ch>=48 && ch<=57)
+				dc++;
+			else
+				spc++;
+	
+			
+		}
+	System.out.println("vowels are"+vc);
+	System.out.println("consonants are"+cc);
+	System.out.println("upper case are"+uc);
+	System.out.println("lower case are"+lc);
+	System.out.println("nos are"+dc);
+	System.out.println("spcl char are are"+spc);
+	
+	
+	}
+}
+
+
+

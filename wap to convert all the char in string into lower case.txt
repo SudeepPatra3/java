@@ -1,0 +1,19 @@
+//wap to convert all the char in string into lower case
+import java.util.Scanner;
+public class Conversion {
+public static void main(String[] args) {
+	Scanner s=new Scanner(System.in);
+	System.out.println("enter the charecter");
+	String st=s.nextLine();
+	String rs="";
+	for (int i = 0; i < st.length(); i++) 
+	{
+		char ch=st.charAt(i);
+		if (ch>=65 && ch<=90)
+			ch=(char)(ch+32);
+		rs=rs+ch;
+		
+	}
+	System.out.println(rs);
+}
+}

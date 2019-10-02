@@ -1,0 +1,33 @@
+/*          1    
+           101
+	  10101
+	 1010101
+	101010101   */
+import java.util.Scanner;
+class Star46
+{
+public static void main(String[] args)
+{	
+Scanner s=new Scanner(System.in);
+System.out.println("enter n");
+int n=s.nextInt();
+
+for(int i=1;i<=n;i++)
+{
+	int count=1;
+	for(int j=1;j<=n-i;j++)//for space
+	{
+	System.out.print(" ");
+	}
+	
+	for(int j=1;j<=2*i-1;j++)
+	{
+	System.out.print(count%2+" ");
+	count++;
+	}
+	System.out.println();
+}
+
+}
+}   	
+	  

@@ -1,0 +1,26 @@
+//wap to define a method to return string all the char must be in upper case
+import java.util.Scanner;
+public class upper
+{
+	static String uppercase(String str)
+	{
+		String rs="";
+		for (int i = 0; i < str.length(); i++) 
+		{
+			char ch=str.charAt(i);
+			if (ch>='a' && ch<='z')
+				ch=(char)(ch-32);
+			rs=rs+ch;
+			
+		}
+		return rs;
+	}
+public static void main(String[] args) {
+	Scanner s=new Scanner(System.in);
+	System.out.println("enter the charecter");
+	String st=s.nextLine();
+	st=uppercase(st);
+	System.out.println(st);
+	
+}
+}

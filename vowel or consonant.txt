@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class Vowel
+{
+	public static void main (String[] args)
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("enter the alphabate");
+		String ii=s.next();
+		//or char c=s.next().s.charAt(0);----it convert string to char
+		if (ii.equals("a")|| ii.equals("e")||ii.equals("i")|| ii.equals("o")||ii.equals("u"))
+			System.out.println("vowel");
+		else if (ii.equals("A")|| ii.equals("E")||ii.equals("I")|| ii.equals("0")||ii.equals("U"))
+			System.out.println("vowel");
+		else
+			System.out.println("consonant");
+
+	}
+}

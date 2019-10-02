@@ -1,0 +1,46 @@
+/*    1
+     123
+    12321
+     123
+      1   */
+import java.util.Scanner;
+class Star55
+{
+public static void main(String[] args)
+{	
+Scanner s=new Scanner(System.in);
+System.out.println("enter n");
+int n=s.nextInt();
+int st=1,sp=n/2;  //sp-space
+for(int i=1;i<=n;i++)
+{
+	for(int j=1;j<=sp;j++)//for space
+	{
+	System.out.print(" ");}
+	int k=st/2+1;
+	for(int j=1;j<=st;j++)//element
+	{
+	System.out.print(k+"");
+	if(j<=st/2)
+	k++;
+else
+	k--;
+	
+	}
+	if(i<=n/2){
+		sp--;
+		st=st+2;
+	}
+	
+	else{
+		sp++;
+		st=st-2;
+	}
+	
+	
+	
+	System.out.println("");
+
+}
+}
+}	   

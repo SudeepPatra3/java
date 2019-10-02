@@ -1,0 +1,26 @@
+//wap to read n integer values from user and print biggest among those
+import java.util.Scanner;
+	public class Biggestarray {
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter size of array");
+		int n=s.nextInt();
+		int ar[]=new int[n];
+		System.out.println("enter "+n+" elements");
+		for(int i=0;i<ar.length;i++)
+		{
+			ar[i]=s.nextInt();
+			
+		}
+		big=ar[0];
+		for(int i=0;i<ar.length;i++)
+		{
+			if(big<ar[i])
+				big=ar[i];
+			System.out.println("biggest no is"+big);
+		}
+	}
+	}
+	
+	
+
